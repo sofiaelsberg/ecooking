@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--husk en beskrivelse af siden i content -->
+    <meta name="description" content="Ecooking Multi Olie kan bruges til mange forskellige ting – det er vi vilde med hos Ecooking.">
+    <!--husk unik title til alle sider -->
+    <title>Ecooking | Multifunktionel Olie</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/fie1jbm.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fie1jbm.css">
+
+
+    <link rel="stylesheet" href="https://use.typekit.net/fie1jbm.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="logo-burger">
+                <a href="index.html"><img class="logo-sof" src="images/logo.png" alt="Ecooking Logo"></a>
+                <label for="toggle">&#9776;</label>
+            </div>
+            <!--dette er en checkbox som gør det muligt at folde burgermenuen ud, og den skal ligge udenfor de to divs-->
+            <input type="checkbox" id="toggle" class="hidden">
+
+            <div id="main-nav">
+                <a href="multiolie.html">MULTI OLIE</a>
+                <div class="dropdown">
+                    <a href="om-ecooking.html">OM ECOOKING
+                    </a>
+
+                </div>
+                <a href="kontakt.html">KONTAKT</a>
+            </div>
+        </nav>
+
+    </header>
+    <!-- DETTE STYKKE MED JAVA ER UDARBEJDET I SAMARBEJDE MED CAMILLA-->
+    <div id="product-wrapper">
+        <h2 class="heading-iphone">MULTI OLIE</h2>
+        <div id="multi-flex">
+            <div><img id="multi-iphone" src="images/multi-iphone.png" alt="Washing Liquid">
+            </div>
+            <div id="description-flex">
+                <div id="about-heading">
+                    <h2 class="heading-tablet">MULTI OLIE</h2>
+                    <h3 class="info">FRA DKK 159 <br>
+                        100 / 500 ml <br>
+                        100% ØKOLOGISKE OLIER</h3>
+                </div>
+                <hr>
+                <button class="collapsible">Funktioner</button>
+                <div class="content">
+                    <hr>
+                    <p>Kropsolie, Afrensning af huden, Makeupfjerner, Barbering til både mænd og kvinder, Intimbarbering, Hårkur, Kur mod tør og skællet hovedbund, Massageolie, Fodbad og karbad, Neglebåndspleje</p>
+                </div>
+                <hr>
+                <button class="collapsible">Anvendelse</button>
+                <div class="content">
+                    <hr>
+                    <p>Ecooking Multi Olie bruges altid på fugtig hud og hår. Den kan også bruges i tørt hår til at givehåret mere glans. Kom da lidt olie i hænderne og stryg hen over håret fra hovedbunden til spidserne. Saml spidserne og ”tør” den sidste rest af olie i håret. Det giver glans samt pleje til håret. </p>
+
+                    <p>Ved afrensning af huden; kom olien på et stykke fugtigt vat og rens derefter. Brug samme procedure ved fjernelse af øjenmakeup. Ved barbering; fugt huden med lunkent vand og kom olien på det område, du ønsker at barbere. Vent et øjeblik og lad olien trænge ind for at blødgøre hårene (1–5 minutter). Barber derefter normalt med en skraber. Herved undgår du indgroede hår, skægpest, samt tørre og dryssende skinneben. Efter barbering smøres området med en smule olie.</p>
+                </div>
+                <hr>
+                <button class="collapsible">Tips</button>
+                <div class="content">
+                    <hr>
+                    <p>Lav din egen lækre bodyscrub ved at blande lidt Ecooking Salt med Multi Olie. Derved får du den peelende effekt fra salten, og den plejende og blødgørende virkning fra olien. Efter badet kan du blande lidt Ecooking Multi Olie i din Bodycreme, og opnå en ekstra blødgørende effekt på huden. </p>
+
+                    <p> Du kan også med fordel anvende Multi Olien ved tør og skællet hovedbund. Brug kun en lille smule på fingrespidserne og dup i din hovedbund, inden du vasker hår og hovedbund med shampoo. Eller dup den forsigtigt i din skilning efter badet, hvis du i perioder oplever meget tør hovedbund.</p>
+                </div>
+                <hr>
+                <button class="collapsible">Ingredienser</button>
+                <div class="content">
+                    <hr>
+                    <p>Sesamum Indicum Seed Oil*, Simmondsia Chinensis Seed Oil*, Parfum, Limonene, Linalool, Geraniol, Citronellol. </p>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <section class="video-section">
+            <h1 class="overskrift">HØR VORES AMBASSADØR SARA FORTÆLLE MERE OM OLIEN</h1>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lAgpLRviI8Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+    <footer>
+
+        <a class="facebook" href="https://www.facebook.com/ecookingdk/"><img src="images/facebook.png" width="25" height="25" title="Ecooking Facebook" alt="Ecooking Facebook"></a>
+
+        <a class="instagram" href="https://www.instagram.com/ecooking/"><img src="images/instagram.png" width="25" height="25" title="Ecooking Instagram" alt="Ecooking Instagram"></a>
+    </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body></html>

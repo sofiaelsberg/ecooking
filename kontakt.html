@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--husk en beskrivelse af siden i content -->
+    <meta name="description" content="Hvis du ikke kan finde svar på dit spørgsmål, så kontakt gerne vores kundeservice. Skriv direkte til os igennem kontaktformularen nedenfor eller ring til os.">
+    <!--husk unik title til alle sider -->
+    <title>Ecooking | Kontakt</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/fie1jbm.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fie1jbm.css">
+
+
+    <link rel="stylesheet" href="https://use.typekit.net/fie1jbm.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="logo-burger">
+                <a href="index.html"><img class="logo-sof" src="images/logo.png" alt=""></a>
+                <label for="toggle">&#9776;</label>
+            </div>
+            <!--dette er en checkbox som gør det muligt at folde burgermenuen ud, og den skal ligge udenfor de to divs-->
+            <input type="checkbox" id="toggle" class="hidden">
+
+            <div id="main-nav">
+                <a href="multiolie.html">MULTI OLIE</a>
+                <div class="dropdown">
+                    <a href="om-ecooking.html">OM ECOOKING
+                    </a>
+
+                </div>
+                <a href="kontakt.html">KONTAKT</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="kontakt-page-wrap">
+
+        <!--Taget inspirration fra https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">Navn</label>
+                <input type="text" id="fname" name="firstname" placeholder="Dit navn..">
+
+                <label for="lname">Efternavn</label>
+                <input type="text" id="lname" name="lastname" placeholder="Dit efternavn..">
+
+                <label for="country">Region</label>
+                <select id="country" name="country">
+                    <option value="jylland">Jylland</option>
+                    <option value="sjælland">Sjælland</option>
+                    <option value="fyn">Fyn</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Skriv til os.." style="height:200px"></textarea>
+
+                <input type="submit" value="Send">
+
+            </form>
+        </div>
+        <section class='udtalelse'>
+            <p class="citat">”Min passion er at skabe produkter der har en synlig effekt og dermed gør en forskel for de mennesker, der bruger dem. Derudover har jeg en ambition om at skabe produkter, som er naturlige og økologiske i det omfang det er muligt, til priser, hvor de fleste kan være med.”</p>
+            <p class="tina">Tina Søgaard, Stifter og Indehaver</p>
+        </section>
+    </main>
+    <footer>
+
+        <a class="facebook" href="https://www.facebook.com/ecookingdk/"><img src="images/facebook.png" width="25" height="25" title="Ecooking Facebook" alt="Ecooking Facebook"></a>
+
+        <a class="instagram" href="https://www.instagram.com/ecooking/"><img src="images/instagram.png" width="25" height="25" title="Ecooking Instagram" alt="Ecooking Instagram"></a>
+    </footer>
+
+
+</body></html>
